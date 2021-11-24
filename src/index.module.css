@@ -9,7 +9,10 @@ body {
   flex-direction: column;
   justify-content:;
   align-items: center;
+
   margin: auto;
+  padding: 0 5px;
+
 }
 
 .header {
@@ -96,3 +99,13 @@ body {
   opacity: 1;
 }
 */
+
+@media screen and (max-width: 400px) {
+  .header {
+    min-width: 340px;
+  }  
+
+  .checkboxDiv {
+    min-width: 340px;
+  }
+}

@@ -11,7 +11,7 @@ import { Button } from 'UI/Button/Button';
 function App() {
   const languages = ['Русский', 'Английский', 'Китайский', 'Испанский'];
   return (
-    <form className="App">
+    <form>
       <div className={styles.wrapper}>
         <div className={styles.header}>
           <HTag tag='h1' children='Регистрация' />
