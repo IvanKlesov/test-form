@@ -3,6 +3,9 @@
     width: 360px;
     height: 52px;
 
+    margin-top: 7px;
+    margin-bottom: 34px;
+
     background: #FFFFFF;
     border: 1px solid #DBE2EA;
     box-sizing: border-box;
@@ -11,5 +14,6 @@
 }
 
 .input:focus {
-    border: 2px solid #0880AE;
+   outline: 2px solid #0880AE;
 }
+
