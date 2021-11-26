@@ -21,8 +21,8 @@ body {
   min-width: 360px;
 }
 
-.main {
-  margin-bottom: 36px;
+.inputBlock {
+  position: relative;
 }
 
 /* Checkbox style */
