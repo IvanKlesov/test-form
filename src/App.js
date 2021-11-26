@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SpanTag } from './UI/SpanTag/SpanTag';
 import styles from './index.module.css';
 import { HTag } from './UI/HTag/HTag';
-import { ATag } from './UI/ATag/ATag';
+import { Link } from './UI/Link/Link';
 import { Label } from 'UI/Label/Label';
 import { Input } from 'UI/Input/Input';
 import { Select } from 'UI/Select/Select';
@@ -97,7 +97,7 @@ function App() {
         <div className={styles.header}>
           <HTag tag='h1' children='Регистрация' />
           <SpanTag children='Уже есть аккаунт?' />
-          <ATag children='Войти' />
+          <Link href='#' children='Войти' />
         </div>
         <div  className={styles.main}>
           <div className={styles.inputBlock}>
@@ -123,7 +123,11 @@ function App() {
         </div>
         <div className={styles.checkboxDiv}>
           <Input type='checkbox' id='rules' onChange={acceptRules} />
-          <Label name='rules' children='Принимаю условия использования' />
+          <Label name='rules'>
+            Принимаю
+            <Link href='#' children='условия ' />
+            использования
+          </Label> 
           {(!validRules && checkForm) && <Warning name='checkbox' children='Необходимо принять условия использования' />}
         </div>
         <Button children='Зарегистрироваться' onClick={submitForm} />
