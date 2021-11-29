@@ -33,14 +33,10 @@ body {
   min-width: 360px;
 }
 
-/*
-
 .checkboxDiv > input {
   appearance: none;
   position: absolute;
 }
-
-
 
 .checkboxDiv > label {
   padding-left: 35px;
@@ -58,7 +54,7 @@ body {
   width: 28px;
   height: 28px;
 
-  border: none;
+  border: 1px solid #DBE2EA;
   background-color: #FFFFFF;
   box-sizing: border-box;
   box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
@@ -90,14 +86,14 @@ body {
   transition: opacity 0.1s linear;
 }
 
-.checkboxDiv > input:checked + .checkboxDiv > label:before {
-  border: 2px solid #0880AE;
+input[type="checkbox"]:checked + label:before {
+  border: 2px solid #0880AE  !important;
 }
 
-.checkboxDiv > input:checked + .checkboxDiv > label:after {
-  opacity: 1;
+input[type="checkbox"]:checked + label:after {
+  opacity: 1 ;
 }
-*/
+
 
 @media screen and (max-width: 400px) {
   .header {

@@ -30,7 +30,7 @@ function App() {
   const changeName = (e) => {
     e.preventDefault();
 
-    const reg = /^[A-Za-z]+$/;
+    const reg = /^(([a-zA-Z' -]{1,80})|([а-яА-ЯЁёІіЇїҐґЄє' -]{1,80}))$/u;
     if (reg.test(e.target.value)) {
       setData({...data, name: e.target.value});
       setValidName(true);
@@ -54,7 +54,7 @@ function App() {
   const changePhone = (e) => {
     e.preventDefault();
 
-    const reg = /^\d[\d\(\)\ -]{4,14}\d$/;
+    const reg = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){11}(\s*)?$/;
     if (reg.test(e.target.value)) {
       setData({...data, phone: e.target.value})
       setValidPhone(true);
